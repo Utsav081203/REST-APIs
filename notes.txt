@@ -1,0 +1,37 @@
+RESTful API:
+Representational State Transfer API.
+Has some Standard/Rules or best practices which defines it.
+
+(1)Consumer View Point
+(2)HTTP methods usage
+(3)Structure Request and Response
+
+Works on Server-Client Architecture,
+Seperate those entities and write logic accordingly.
+
+Server Side Rendering(although Fast and Secure) should not happen.
+Web fetch data from Database on server side, then in which format should we send the data : JSON, client could thus process the data in its own way.
+Frontend could be handled by anything, the data could be utilized in their own way to render.
+(Client Side Rendering) which React does. Fetch-->Render.
+
+HTTP methods must work as per their roles only.
+Ex: POST request shouldn't be used for update, delete or any other functionality (POST/updateUser, POST/deleteUser, etc)
+Each method must solely be used for it's original purpose.
+GET, POST, PUT, PATCH, DELETE must be used for their own purpose.
+
+Browsers by default use GET requests. Thus, POSTMAN used to check and validate APIs for POST, PATCH, DELETE methods.
+POSTMAN is used for API testing.
+
+Client <=====APIs=====> Server 
+CRUD operations need to be done here
+
+REST was created to create standards for communication between two servers.
+Resource oriented architecture, client-server based architecture, developed using http.
+Best practices:
+Name endpoint as per the http method.
+Return standard error codes to the result of out API.
+Support for Filter, Sort and Pagination.
+Endpoints name should be plural.
+Follow Endpoints name should be plural. (SSL/TLS)
+Caching.
+Versioning.
