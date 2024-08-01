@@ -1,0 +1,16 @@
+{
+  "dependencies": {
+    "axios": "^1.7.2"
+  },
+  "name": "rest_api_qs",
+  "version": "1.0.0",
+  "main": "Q1.js",
+  "type": "commonjs",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}

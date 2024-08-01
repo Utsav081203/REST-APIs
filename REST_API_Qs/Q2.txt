@@ -1,0 +1,19 @@
+Same Context as Q1.
+
+Task: For a given competition name and year, get total number of goals by team who won the competition.
+
+To access which team won competition in a year.
+api_url: https://jsonmock.hackerrank.com/api/football_competitions?name=<competition_name>&page=<page>
+
+JSON Object format:
+name
+country
+year
+winner
+runnerup
+
+To access collection of matches played by given team in a competition and a year:
+api_url: https://jsonmock.hackerrank.com/api/football_matches?name=<competition_name>&year=<year>&team1=<team>&page=<page>
+api_url: https://jsonmock.hackerrank.com/api/football_matches?name=<competition_name>&year=<year>&team2=<team>&page=<page>
+
+team1 denotes home team, team2 denotes visiting team.

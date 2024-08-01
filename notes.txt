@@ -27,7 +27,21 @@ CRUD operations need to be done here
 
 REST was created to create standards for communication between two servers.
 Resource oriented architecture, client-server based architecture, developed using http.
-Best practices:
+
+**Overview:
+POST request: /api/checkpoints + payload
+in return: 201 + Location
+
+GET request: /api/checkpoints
+in return: 200 + payload
+
+PUT request: /api/checkpoints/checkpoint + payload
+in return: 200
+
+DELETE request: /api/checkpoints/checkpoint
+in return: 200
+
+**Best practices:
 Name endpoint as per the http method.
 Return standard error codes to the result of out API.
 Support for Filter, Sort and Pagination.
@@ -35,3 +49,27 @@ Endpoints name should be plural.
 Follow Endpoints name should be plural. (SSL/TLS)
 Caching.
 Versioning.
+
+Install nodemon (with -D) to install it as dev dependency.
+(wont go in production, only limited to development).
+
+URL Encode Special Characters
+If your password contains special characters like @, #, %, etc., you must URL encode these characters. Here’s how you can encode common special characters:
+
+@ becomes %40
+# becomes %23
+% becomes %25
+& becomes %26
+= becomes %3D
+For example, if your password is Utsav@098765, it should be encoded to Utsav%40098765.
+
+JWT- Jason Web Tokens: Header, Payload, Verification Signature (secret only known to issuer and receiver)
+Using this token, we can send this headers in encoded way.
+
+we will send token from which id will be extracted. for getting user data.
+
+encrypt passwords to store in database, we use bcryptjs package
+jsonwebtoken package.
+
+Sign tokens in regsiter and login.
+secret kept in .env
